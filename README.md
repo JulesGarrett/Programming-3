@@ -1,2 +1,2 @@
 # Programming3
-# Programming3
+# EECS 368 at KU
