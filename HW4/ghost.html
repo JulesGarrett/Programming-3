@@ -1,0 +1,47 @@
+<html>
+  <body>
+
+  </body>
+
+  <script>
+  
+    function Ghost(color, a, b){
+      this.color=color;
+      this.x=a;
+      this.y=b;
+    }
+    Ghost.prototype.up=function(){
+      this.y++;
+      if(this.y > 16){
+        this.y=0;
+      }
+      console.log(this.color +" ghost is at location "+this.x+" x "+this.y);
+    }
+    Ghost.prototype.down=function(){
+      this.y--;
+      if(this.y < 0){
+        this.y=16;
+      }
+      return console.log(this.color +" ghost is at location "+this.x+" x "+this.y);
+    }
+    Ghost.prototype.left=function(){
+      this.x--;
+      if(this.x < 0){
+        this.x=16;
+      }
+      return console.log(this.color +" ghost is at location "+this.x+" x "+this.y);
+    }
+    Ghost.prototype.right=function(){
+      this.x++;
+      if(this.x > 16){
+        this.x=0;
+      }
+      return console.log(this.color +" ghost is at location "+this.x+" x "+this.y);
+    }
+    Ghost.prototype.toString=function(){
+      return console.log(this.color +" ghost is at location "+this.x+" x "+this.y);
+    }
+  </script>
+
+
+</html>
